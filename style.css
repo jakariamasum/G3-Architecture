@@ -22,7 +22,15 @@ header {
     margin-bottom: 85px;
     padding: 0 100px;
 }
-
+.btn {
+    padding: 20px 24px;
+    border-radius: 9px;
+    background: #FF900E;
+    color: #FFFFFF;
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+}
 /* navbar section */
 
 nav {
@@ -39,8 +47,7 @@ nav>ul {
     gap: 25px;
 }
 
-/* navbar section responsive for mobile */
-
+/* banner section */
 
 .banner-details {
     display: flex;
@@ -64,16 +71,6 @@ nav>ul {
 .banner-subtitle {
     color: #727272;
     margin-bottom: 30px;
-}
-
-.btn {
-    padding: 20px 24px;
-    border-radius: 9px;
-    background: #FF900E;
-    color: #FFFFFF;
-    border: none;
-    font-weight: 600;
-    font-size: 20px;
 }
 .banner-pic{
     width: 1296px;
@@ -121,23 +118,6 @@ nav>ul {
     margin-bottom: 32px;
     margin-top: 24px;
     color: #727272;
-}
-.experience-button{
-    display: flex;
-    justify-content: center;
-    
-    
-}
-.btn{
-    width: 280px;
-    font-weight: 700;
-    font-size: 50px;
-    top:-80%;
-    z-index: 11;
-}
-.experience{
-    font-weight: 500;
-    font-size: 25px;
 }
 
 
@@ -192,6 +172,25 @@ nav>ul {
     position: relative;
 }
 
+/* Experience section */
+.experience-button{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.experience-btn{
+    width: 280px;
+    font-weight: 700;
+    font-size: 50px;
+    position: relative;
+    top:-190px;
+    left: 65px;
+}
+.experience{
+    font-weight: 500;
+    font-size: 25px;
+}
 
 /* facts section */
 
@@ -280,9 +279,7 @@ nav>ul {
     display: flex;
     gap:117px;
     justify-content: center;
-    /* background:#FFF8F3; */
     margin-top: 150px;
-    /* padding: 130px; */
 }
 .contact .title{
     margin-bottom: 20px;
@@ -336,14 +333,20 @@ footer {
 
 @media screen and (max-width:480px) {
     main,footer{
-        max-width: 400px;
+        max-width: 480px;
         margin: 0 auto;
     }
-    nav,nav>ul,.features,.another-features,.facts-info,.team-imgs,.sponsors-img{
+    .logo-name{
+        margin-bottom: 25px;
+    }
+    nav,nav>ul,.features,.another-features,.facts-info,.team-imgs,.sponsors-img,.contact{
         flex-direction: column;
     }
     nav>ul{
         gap:8px;
+    }
+    .banner-title{
+        margin-top: 70px;
     }
     .team-imgs{
         grid-template-columns: repeat(1,1fr);
@@ -352,30 +355,49 @@ footer {
     .features{
         text-align: center;
     }
+    .features-title{
+        margin-left: 15px;
+    }
+    .features-subtitle{
+        width: 90%;
+        margin-left: 12px;
+    }
+    .experience-btn{
+        top:80px;
+        left: 5px;
+    }
     .team-subtitle{
         width: 80%;
         display: flex;
         justify-content: center;
         text-align: center;
-        /* margin: 20px; */
+        margin: 60px;
+    }
+    .facts,.contact{
+        padding: 25px;
+    }
+    
+    .fact-album:hover{
+        width: 250px;
+        height: 150px;
     }
     .sponsors-subtitle{
         width: 80%;
-        /* text-align: center; */
     }
     .sponsors-img{
         gap:50px;
         align-items: center;
     }
-    .contact{
-        flex-direction: column;
+    .features-list{
+        margin-left: 15px;
     }
-    .contact .description{
-        width: 100%;
-    }
+    
+    
     footer{
         justify-content: center;
         padding-left: 30px;
+        align-items: center;
+        margin-left: 25px;
     }
     .facts-info {
         gap: 75px;
@@ -384,23 +406,15 @@ footer {
     
     .fact-album {
         width: 50%;
-        margin-bottom: 60px;
     }
     
-    .featurs-list-subtitle, .features-subtitle,.facts-subtitle{
+    .featurs-list-subtitle,.facts-subtitle,.contact .description, .architect-img,.banner-pic{
         width: 100%;
     }
-    .architect-img{
-        width: 100%;
-    }
+    
     .btn{
         font-weight: 700;
         font-size: 30px;
     }
-    .team-subtitle{
-        margin: 20px;
-    }
-    .banner-pic {
-        width: 100%;
-    }
+    
 }
