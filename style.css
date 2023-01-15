@@ -222,7 +222,14 @@ nav>ul {
     border-radius: 8px;
     margin-bottom: 200px;
 }
-
+.fact-album:hover{
+    background-color:#FF900E;
+    height: 10%;
+    width: 30%;
+    border-radius: 10px;
+    font-size: 45px;
+    transition: all 2s ease-out 0.4s;
+}
 .fact-cnt {
     font-weight: 600;
     font-size: 45px;
@@ -319,6 +326,7 @@ footer {
     color: #424242;
     height: 100px;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 
@@ -339,6 +347,7 @@ footer {
     }
     .team-imgs{
         grid-template-columns: repeat(1,1fr);
+        gap:25px;
     }
     .features{
         text-align: center;
@@ -357,6 +366,12 @@ footer {
     .sponsors-img{
         gap:50px;
         align-items: center;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .contact .description{
+        width: 100%;
     }
     footer{
         justify-content: center;
@@ -384,5 +399,8 @@ footer {
     }
     .team-subtitle{
         margin: 20px;
+    }
+    .banner-pic {
+        width: 100%;
     }
 }
